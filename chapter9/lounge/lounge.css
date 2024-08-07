@@ -1,0 +1,16 @@
+.guarantee {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #a7cece;
+    padding: 25px;
+    padding-left: 80px;
+    margin: 30px; /*增加外边距*/
+    margin-right: 250px;
+    background-image: url(images/background.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    /*这种边框属性*/
+    border-style: dashed;
+    border-color: white;
+}
