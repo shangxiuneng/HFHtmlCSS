@@ -62,3 +62,23 @@ h2 {
 #elixirs h3 { /*子孙选择器*/
     color: #d12c47;
 }
+
+.cd {
+    font-style: italic;
+}
+
+.artist {
+    font-weight: bold;
+}
+
+#elixirs a:link {
+    color: green; /*未访问的连接设置状态*/
+}
+
+#elixirs a:visited {
+    color: red; /*已经访问过的连接*/
+}
+
+#elixirs a:hover {
+    color: yellow; /*悬停在一个连接上时应用这个选择器*/
+}
