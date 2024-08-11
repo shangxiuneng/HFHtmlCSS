@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>The Starbuzz Bean Machine</title>
-  </head>
-  <body>
+</head>
+<body>
 
-    <h1>The Starbuzz Bean Machine</h1>
-    <h2>Fill out the form below and click submit to order</h2>
+<h1>The Starbuzz Bean Machine</h1>
+<h2>请填写以下表格并点击提交以完成订单</h2>
+
+<form action="https://starbuzzcoffee.com/processorder.php" method="POST">
+
+    <select name="beans">
+        <option value="House Blend">House Blend</option>
+        <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+        <option value="Guatemala">Organic Guatemala</option>
+        <option value="Kenya">Kenya</option>
+    </select>
+
+    <p>
+        <input name="beantype" type="radio" value="whole">全豆咖啡<br>
+        <input checked name="beantype" type="radio" value="ground">研磨咖啡<br>
+    </p>
+
+    <p>
+        购买包数:<input max="10" min="1" name="bags" type="number">
+    </p>
+    <p>
+        到达日期:<input name="date" type="date">
+    </p>
+
+    <p>
+        Extras:<br>
+        <input name="extras[]" type="checkbox" value="giftwrap">Gift wrap 包装的像一个礼物<br>
+        <input checked name="extras[]" type="checkbox" value="catalog">Include catalog with order
+    </p>
+
+    <p>Ship to:<br>
+        Name: <input name="name" type="text"><br>
+        Address: <input name="address" type="text"><br>
+        City: <input name="city" type="text"><br>
+        State: <input name="state" type="text"><br>
+        Zip:<input name="zip" type="text"><br>
+        Phone: <input name="phone" type="tel"><br>
+    </p>
+    <p>Costomer Comments:<br>
+        <textarea name="comments"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="order now">
+    </p>
+
+</form>
 
 
-
-  </body>
+</body>
 </html>
 
